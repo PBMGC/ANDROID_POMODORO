@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Capa del borde -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00FF00"/> <!-- Color verde del borde -->
+            <size
+                android:width="250dp"
+                android:height="250dp"/> <!-- Tamaño del borde -->
+        </shape>
+    </item>
+
+    <!-- Capa del relleno -->
+    <item android:top="5dp" android:left="5dp" android:right="5dp" android:bottom="5dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF0000"/> <!-- Color rojo del relleno -->
+            <size
+                android:width="240dp" android:height="240dp"/>
+        </shape>
+    </item>
+</layer-list>

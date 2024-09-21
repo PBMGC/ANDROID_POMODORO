@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/etiqueta_opciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPCIONES DE TIEMPO:"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <CheckBox
+            android:id="@+id/pomodoro_largo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomodoro Largo (45 min)"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/pomodoro_medio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomodoro Promedio (25 min)"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/pomodoro_corto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomodoro Corto (15 min)"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/boton_guardar_configuracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar Configuración"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/boton_cancelar_configuracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

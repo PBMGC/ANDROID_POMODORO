@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/boton_configuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:background="#161414"
+        android:backgroundTint="#181515"
+        android:text="Configuración" />
+
+    <ImageView
+        android:id="@+id/imagen_tomate"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/boton_configuracion"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img" />
+
+    <RelativeLayout
+        android:id="@+id/fondo_reloj_circular"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/imagen_tomate"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circulo_reloj">
+
+    <TextView
+        android:id="@+id/texto_temporizador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+</RelativeLayout>
+
+<TextView
+android:id="@+id/tarea_actual"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/fondo_reloj_circular"
+android:layout_marginTop="30dp"
+    android:background="@android:color/darker_gray"
+    android:padding="16dp"
+    android:text="Tarea Actual: [Tu Tarea]"
+    android:textColor="#FFFFFF"
+    android:textSize="24sp" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/tarea_actual"
+android:orientation="horizontal"
+android:gravity="center"
+android:layout_marginTop="16dp"> <!-- Margen superior para separar de la tarea actual -->
+
+<Button
+    android:id="@+id/boton_iniciar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FD0000"
+    android:text="Iniciar" />
+
+<Button
+    android:id="@+id/boton_pausar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:backgroundTint="#8BC34A"
+    android:text="Pausar" />
+
+<Button
+    android:id="@+id/boton_agregar_tarea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:backgroundTint="#F44336"
+    android:text="Añadir Tarea" />
+</LinearLayout>
+    </RelativeLayout>
